@@ -18,7 +18,7 @@ class Kategori extends Model
         'icon'
     ];
 
-    public function setNameAttribute($value)
+    public function setNamaAttribute($value)
     {
         $this->attributes['nama'] = $value;
         $this->attributes['slug'] = Str::slug($value);
