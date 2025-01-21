@@ -5,9 +5,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[FrontController::class, 'index'])->name('front.index');
 
-Route::get('details/{artikel_news:slug}',[FrontController::class, 'details'])->name('front.details');
+Route::get('details/{artikels:slug}',[FrontController::class, 'details'])->name('front.details');
 
-Route::get('/kategori/{slug}',[FrontController::class, 'kategori'])->name('front.kategori');
+Route::get('/kategori/{kategori:slug}', [FrontController::class, 'kategori'])->name('front.kategori');
+//Route::get('/kategori/{slug}',[FrontController::class, 'kategori'])->name('front.kategori');
 
 Route::get('/author/{author:slug}',[FrontController::class, 'author'])->name('front.author');
 

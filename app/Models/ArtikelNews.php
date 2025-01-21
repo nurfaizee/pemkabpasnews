@@ -12,6 +12,7 @@ class ArtikelNews extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $table = 'artikels';
     protected $fillable = [
         'nama',
         'slug',
